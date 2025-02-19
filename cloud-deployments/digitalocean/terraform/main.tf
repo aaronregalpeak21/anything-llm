@@ -17,7 +17,7 @@ provider "digitalocean" {
 
 resource "digitalocean_droplet" "Mito-Labs" {
   image  = "ubuntu-24-04-x64"
-  name   = "anything-llm-instance"
+  name   = "mito-labs-instance"
   region = "nyc3"
   size   = "s-2vcpu-2gb"
 

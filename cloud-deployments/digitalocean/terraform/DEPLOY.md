@@ -13,7 +13,11 @@ The output of this Terraform configuration will be:
 
 ## How to deploy on DigitalOcean
 Open your terminal and navigate to the `docker` folder
+<<<<<<< HEAD
 1. Create a `.env` file by cloning the `.env.example`.
+=======
+1. Create a `.env` file by cloning the `.env.example`. 
+>>>>>>> 40d55f40 (Digital Ocean Terraform Patches (#1866))
 2. Navigate to `digitalocean/terraform` folder.
 3. Replace the token value in the provider "digitalocean" block in main.tf with your DigitalOcean API token.
 4. Run the following commands to initialize Terraform, review the infrastructure changes, and apply them:

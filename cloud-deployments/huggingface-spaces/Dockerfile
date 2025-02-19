@@ -18,12 +18,12 @@
 # - Your container will build and boot. You now have AnythingLLM on HuggingFace. Your data is stored in the persistent storage attached.
 # Have Fun 🤗
 # Have issues? Check the logs on HuggingFace for clues.
-FROM mintplexlabs/anythingllm:render
+FROM vsc-anything-llm-71f9c2cce6144c9286964f9f1fdfb1471f09b7ad010ee13ee8044b315cf1ce15-features:latest
 
 USER root
 RUN mkdir -p /data/storage
 RUN ln -s /data/storage /storage
-USER anythingllm
+USER mito-labs
 
 ENV STORAGE_DIR="/data/storage"
 ENV SERVER_PORT=7860

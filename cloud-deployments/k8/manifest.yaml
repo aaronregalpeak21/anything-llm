@@ -1,29 +1,29 @@
 ---
-apiVersion: v1                                                                                                                                           
-kind: PersistentVolume                                                                                                                                   
-metadata:                                                                                                                                                
-  name: anything-llm-volume                                                                                                                              
-  annotations:                                                                                                                                           
-    pv.beta.kubernetes.io/uid: "1000"                                                                                                                    
-    pv.beta.kubernetes.io/gid: "1000"                                                                                                                    
-spec:                                                                                                                                                    
-  storageClassName: gp2                                                                                                                                  
-  capacity:                                                                                                                                              
-    storage: 5Gi                                                                                                                                        
-  accessModes:                                                                                                                                           
-    - ReadWriteOnce                                                                                                                                      
-  awsElasticBlockStore:    
-    # This is the volume UUID from AWS EC2 EBS Volumes list.                                                                                                                              
-    volumeID: "{{ anythingllm_awsElasticBlockStore_volumeID }}"                                                                                                                           
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: anything-llm-volume
+  annotations:
+    pv.beta.kubernetes.io/uid: "1000"
+    pv.beta.kubernetes.io/gid: "1000"
+spec:
+  storageClassName: gp2
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  awsElasticBlockStore:
+    # This is the volume UUID from AWS EC2 EBS Volumes list.
+    volumeID: "{{ anythingllm_awsElasticBlockStore_volumeID }}"
     fsType: ext4
-  nodeAffinity:                                                                                                                                          
-    required:                                                                                                                                            
-      nodeSelectorTerms:                                                                                                                                 
-      - matchExpressions:                                                                                                                                
-        - key: topology.kubernetes.io/zone                                                                                                               
-          operator: In                                                                                                                                   
-          values:                                                                                                                                        
-          - us-east-1c  
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: topology.kubernetes.io/zone
+          operator: In
+          values:
+          - us-east-1c
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -68,22 +68,22 @@ spec:
     spec:
       serviceAccountName: "default"
       terminationGracePeriodSeconds: 10
-      securityContext:                                                                                                                                                              
+      securityContext:
         fsGroup: 1000
-        runAsNonRoot: true                                                                                                                                                          
+        runAsNonRoot: true
         runAsGroup: 1000
         runAsUser: 1000
-      affinity:                                                                                                                                                                                                                                                                          
-        nodeAffinity:                                                                                                                                                                                                                                                                    
-          requiredDuringSchedulingIgnoredDuringExecution:                                                                                                                                                                                                                                
-            nodeSelectorTerms:                                                                                                                                                                                                                                                           
-            - matchExpressions:                                                                                                                                                                                                                                                          
-              - key: topology.kubernetes.io/zone                                                                                                                                                                                                                                         
-                operator: In                                                                                                                                                                                                                                                             
-                values:                                                                                                                                                                                                                                                                  
-                - us-east-1c  
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: topology.kubernetes.io/zone
+                operator: In
+                values:
+                - us-east-1c
       containers:
-      - name: anything-llm
+      - name: jolly-williams
         resources:
           limits:
             memory: "1Gi"
@@ -92,16 +92,16 @@ spec:
             memory: "512Mi"
             cpu: "250m"
         imagePullPolicy: IfNotPresent
-        image: "mintplexlabs/anythingllm:render"
-        securityContext:                     
-          allowPrivilegeEscalation: true                                                                                                                                                                                                                                                 
-          capabilities:                                                                                                                                                                                                                                                                  
-            add:                                                                                                                                                                                                                                                                         
-              - SYS_ADMIN                                                                                                                                                                                                                                                                
-          runAsNonRoot: true                                                                                                                                                                                                                                                             
-          runAsGroup: 1000                                                                                                                                                                                                                                                               
-          runAsUser: 1000                                                                                                                                       
-        command: 
+        image: "vsc-anything-llm-71f9c2cce6144c9286964f9f1fdfb1471f09b7ad010ee13ee8044b315cf1ce15-features:latest"
+        securityContext:
+          allowPrivilegeEscalation: true
+          capabilities:
+            add:
+              - SYS_ADMIN
+          runAsNonRoot: true
+          runAsGroup: 1000
+          runAsUser: 1000
+        command:
           # Specify a command to override the Dockerfile's ENTRYPOINT.
           - /bin/bash
           - -c
@@ -119,7 +119,7 @@ spec:
                 node /app/server/index.js
               echo "Server process exited with status $?"
             } &
-            { 
+            {
               node /app/collector/index.js
               echo "Collector process exited with status $?"
             } &
@@ -158,9 +158,9 @@ spec:
             value: "1000"
           - name: GID
             value: "1000"
-        volumeMounts: 
+        volumeMounts:
           - name: anything-llm-server-storage-volume-mount
-            mountPath: /storage                                                                                                                                                  
+            mountPath: /storage
       volumes:
         - name: anything-llm-server-storage-volume-mount
           persistentVolumeClaim:
@@ -187,7 +187,7 @@ spec:
         backend:
           service:
             name: anything-llm-svc
-            port: 
+            port:
               number: 3001
   tls: # < placing a host in the TLS config will indicate a cert should be created
     - hosts:

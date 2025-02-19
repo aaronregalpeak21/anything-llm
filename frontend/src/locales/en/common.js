@@ -134,7 +134,7 @@ const TRANSLATIONS = {
     user2:
       "Is this like an AI-powered file hub with chat capabilities? Tell me more about it.",
     part5:
-      "Mito is more than a smarter file storage system. It offers two ways to interact with your data:",
+      "Mito is more than a smarter file storage system. It offers two ways to interact with your data: Chat Provides answers using the AI's general knowledge and document context when available and Query Provides answers only if document context is found.",
     user3: "Wow, this sounds amazing—let me try it out!",
     part6: "Have Fun!",
     contact: "Contact Support",

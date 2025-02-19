@@ -2,17 +2,19 @@
 const TRANSLATIONS = {
   onboarding: {
     survey: {
-      email: null,
-      useCase: null,
-      useCaseWork: null,
-      useCasePersonal: null,
-      useCaseOther: null,
-      comment: null,
-      commentPlaceholder: null,
-      skip: null,
+      title: "Bienvenido al Motor de Rendimiento de Mito",
+      description: "Ayúdanos a adaptar Mito a tus necesidades. Opcional.",
+      email: "¿Cuál es tu correo electrónico?",
+      useCase: "¿Para qué usarás Mito?",
+      useCaseWork: "Para trabajo",
+      useCasePersonal: "Para uso personal",
+      useCaseOther: "Otro",
+      comment: "¿Cómo te enteraste de Mito?",
+      commentPlaceholder:
+        "Reddit, Twitter, GitHub, YouTube, etc. - ¡Cuéntanos cómo nos encontraste!",
+      skip: "Omitir Encuesta",
       thankYou: null,
-      title: null,
-      description: null,
+      emailPlaceholder: null,
     },
     home: {
       title: null,

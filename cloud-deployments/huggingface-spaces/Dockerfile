@@ -1,4 +1,4 @@
-# With this dockerfile in a Huggingface space you will get an entire AnythingLLM instance running
+# With this dockerfile in a Huggingface space you will get an entire Mito Instance running
 # in your space with all features you would normally get from the docker based version of AnythingLLM.
 #
 # How to use
@@ -16,7 +16,7 @@
 # - Click "Add Files"
 # - Upload this file or create a file named `Dockerfile` and copy-paste this content into it. "Commit to main" and save.
 # - Your container will build and boot. You now have AnythingLLM on HuggingFace. Your data is stored in the persistent storage attached.
-# Have Fun 🤗 
+# Have Fun 🤗
 # Have issues? Check the logs on HuggingFace for clues.
 FROM mintplexlabs/anythingllm:render
 

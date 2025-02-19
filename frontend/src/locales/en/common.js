@@ -4,10 +4,10 @@ const TRANSLATIONS = {
       title: "Welcome to",
       getStarted: "Get Started",
     },
-    llm: {
-      title: "LLM Preference",
+    aiPreference: {
+      title: "AI Provider Preference",
       description:
-        "AnythingLLM can work with many LLM providers. This will be the service which handles chatting.",
+        "Mito can work with many AI providers. This service handles all AI chat functionalities.",
     },
     userSetup: {
       title: "User Setup",
@@ -20,7 +20,6 @@ const TRANSLATIONS = {
       passwordReq: "Passwords must be at least 8 characters.",
       passwordWarn:
         "It's important to save this password because there is no recovery method.",
-
       adminUsername: "Admin account username",
       adminUsernameReq:
         "Username must be at least 6 characters long and only contain lowercase letters, numbers, underscores, and hyphens with no spaces.",
@@ -37,15 +36,14 @@ const TRANSLATIONS = {
         "These settings can be reconfigured at any time in the settings.",
     },
     survey: {
-      title: "Welcome to AnythingLLM",
-      description: "Help us make AnythingLLM built for your needs. Optional.",
-
+      title: "Welcome to Mito Labs",
+      description: "Help us tailor Mito to your needs. Optional.",
       email: "What's your email?",
-      useCase: "What will you use AnythingLLM for?",
+      useCase: "What will you use Mito for?",
       useCaseWork: "For work",
       useCasePersonal: "For personal use",
       useCaseOther: "Other",
-      comment: "How did you hear about AnythingLLM?",
+      comment: "How did you hear about Mito?",
       commentPlaceholder:
         "Reddit, Twitter, GitHub, YouTube, etc. - Let us know how you found us!",
       skip: "Skip Survey",
@@ -54,13 +52,13 @@ const TRANSLATIONS = {
     workspace: {
       title: "Create your first workspace",
       description:
-        "Create your first workspace and get started with AnythingLLM.",
+        "Create your first workspace and get started with Mito.",
     },
   },
   common: {
-    "workspaces-name": "Workspaces Name",
-    error: "error",
-    success: "success",
+    "workspaces-name": "Workspace Name",
+    error: "Error",
+    success: "Success",
     user: "User",
     selection: "Model Selection",
     saving: "Saving...",
@@ -71,8 +69,6 @@ const TRANSLATIONS = {
     yes: "Yes",
     no: "No",
   },
-
-  // Setting Sidebar menu items.
   settings: {
     title: "Instance Settings",
     system: "General Settings",
@@ -82,7 +78,7 @@ const TRANSLATIONS = {
     "workspace-chats": "Workspace Chats",
     customization: "Customization",
     "api-keys": "Developer API",
-    llm: "LLM",
+    ai: "AI Provider",
     transcription: "Transcription",
     embedder: "Embedder",
     "text-splitting": "Text Splitter & Chunking",
@@ -101,8 +97,6 @@ const TRANSLATIONS = {
     contact: "Contact Support",
     "browser-extension": "Browser Extension",
   },
-
-  // Page Definitions
   login: {
     "multi-user": {
       welcome: "Welcome to",
@@ -126,35 +120,29 @@ const TRANSLATIONS = {
       "back-to-login": "Back to Login",
     },
   },
-
   welcomeMessage: {
     part1:
-      "Welcome to AnythingLLM, AnythingLLM is an open-source AI tool by Mintplex Labs that turns anything into a trained chatbot you can query and chat with. AnythingLLM is a BYOK (bring-your-own-keys) software so there is no subscription, fee, or charges for this software outside of the services you want to use with it.",
+      "Welcome to Mito Labs, the AI-powered performance engine that transforms your business. Mito unifies your data, automates processes, and delivers actionable insights in one powerful platform.",
     part2:
-      "AnythingLLM is the easiest way to put powerful AI products like OpenAi, GPT-4, LangChain, PineconeDB, ChromaDB, and other services together in a neat package with no fuss to increase your productivity by 100x.",
+      "With Mito, you gain a unified system that integrates project management, CRM, finance, and more—eliminating the need for multiple, expensive subscriptions.",
     part3:
-      "AnythingLLM can run totally locally on your machine with little overhead you wont even notice it's there! No GPU needed. Cloud and on-premises installation is available as well.\nThe AI tooling ecosystem gets more powerful everyday. AnythingLLM makes it easy to use.",
-    githubIssue: "Create an issue on GitHub",
+      "Mito leverages a vectorized database to instantly search, analyze, and retrieve performance data, ensuring your business operates at peak efficiency.",
     user1: "How do I get started?!",
     part4:
-      "It's simple. All collections are organized into buckets we call \"Workspaces\". Workspaces are buckets of files, documents, images, PDFs, and other files which will be transformed into something LLM's can understand and use in conversation.\n\nYou can add and remove files at anytime.",
+      "Everything is organized into Workspaces—buckets of files, documents, images, PDFs, and more—transformed into actionable data for our AI.",
     createWorkspace: "Create your first workspace",
     user2:
-      "Is this like an AI dropbox or something? What about chatting? It is a chatbot isn't it?",
+      "Is this like an AI-powered file hub with chat capabilities? Tell me more about it.",
     part5:
-      "AnythingLLM is more than a smarter Dropbox.\n\nAnythingLLM offers two ways of talking with your data:\n\n<i>Query:</i> Your chats will return data or inferences found with the documents in your workspace it has access to. Adding more documents to the Workspace make it smarter! \n\n<i>Conversational:</i> Your documents + your on-going chat history both contribute to the LLM knowledge at the same time. Great for appending real-time text-based info or corrections and misunderstandings the LLM might have. \n\nYou can toggle between either mode \n<i>in the middle of chatting!</i>",
-    user3: "Wow, this sounds amazing, let me try it out already!",
+      "Mito is more than a smarter file storage system. It offers two ways to interact with your data:",
+    user3: "Wow, this sounds amazing—let me try it out!",
     part6: "Have Fun!",
-    starOnGitHub: "Star on GitHub",
-    contact: "Contact Mintplex Labs",
+    contact: "Contact Support",
   },
-
   "new-workspace": {
     title: "New Workspace",
     placeholder: "My Workspace",
   },
-
-  // Workspace Settings menu items
   "workspaces—settings": {
     general: "General Settings",
     chat: "Chat Settings",
@@ -162,15 +150,13 @@ const TRANSLATIONS = {
     members: "Members",
     agent: "Agent Configuration",
   },
-
-  // General Appearance
   general: {
     vector: {
       title: "Vector Count",
       description: "Total number of vectors in your vector database.",
     },
     names: {
-      description: "This will only change the display name of your workspace.",
+      description: "This will change the display name of your workspace.",
     },
     message: {
       title: "Suggested Chat Messages",
@@ -179,7 +165,7 @@ const TRANSLATIONS = {
       add: "Add new message",
       save: "Save Messages",
       heading: "Explain to me",
-      body: "the benefits of AnythingLLM",
+      body: "the benefits of Mito",
     },
     pfp: {
       title: "Assistant Profile Image",
@@ -187,11 +173,12 @@ const TRANSLATIONS = {
         "Customize the profile image of the assistant for this workspace.",
       image: "Workspace Image",
       remove: "Remove Workspace Image",
+      replace: "Replace",
     },
     delete: {
       title: "Delete Workspace",
       description:
-        "Delete this workspace and all of its data. This will delete the workspace for all users.",
+        "Delete this workspace and all of its data. This will remove the workspace for all users.",
       delete: "Delete Workspace",
       deleting: "Deleting Workspace...",
       "confirm-start": "You are about to delete your entire",
@@ -199,162 +186,151 @@ const TRANSLATIONS = {
         "workspace. This will remove all vector embeddings in your vector database.\n\nThe original source files will remain untouched. This action is irreversible.",
     },
   },
-
-  // Chat Settings
   chat: {
-    llm: {
-      title: "Workspace LLM Provider",
+    ai: {
+      title: "Workspace AI Provider",
       description:
-        "The specific LLM provider & model that will be used for this workspace. By default, it uses the system LLM provider and settings.",
-      search: "Search all LLM providers",
+        "Select the AI provider that will power this workspace's chat functionality. By default, it uses the system's preferred AI.",
+      search: "Search all AI providers",
     },
     model: {
-      title: "Workspace Chat model",
+      title: "Workspace Chat Model",
       description:
-        "The specific chat model that will be used for this workspace. If empty, will use the system LLM preference.",
+        "The specific chat model for this workspace. If left empty, the system's default AI settings will be used.",
       wait: "-- waiting for models --",
     },
     mode: {
-      title: "Chat mode",
+      title: "Chat Mode",
       chat: {
         title: "Chat",
-        "desc-start": "will provide answers with the LLM's general knowledge",
+        "desc-start": "Provides answers using the AI's general knowledge",
         and: "and",
-        "desc-end": "document context that is found.",
+        "desc-end": "document context when available.",
       },
       query: {
         title: "Query",
-        "desc-start": "will provide answers",
-        only: "only",
-        "desc-end": "if document context is found.",
+        "desc-start": "Provides answers only",
+        only: "if document context is found.",
+        "desc-end": "",
       },
     },
     history: {
       title: "Chat History",
       "desc-start":
-        "The number of previous chats that will be included in the response's short-term memory.",
+        "Number of previous chats included in short-term memory for responses.",
       recommend: "Recommend 20. ",
       "desc-end":
-        "Anything more than 45 is likely to lead to continuous chat failures depending on message size.",
+        "Anything more than 45 may lead to chat performance issues.",
     },
     prompt: {
       title: "Prompt",
       description:
-        "The prompt that will be used on this workspace. Define the context and instructions for the AI to generate a response. You should to provide a carefully crafted prompt so the AI can generate a relevant and accurate response.",
+        "Define the context and instructions for the AI to generate a response. A well-crafted prompt ensures accurate and relevant responses.",
     },
     refusal: {
-      title: "Query mode refusal response",
-      "desc-start": "When in",
-      query: "query",
-      "desc-end":
-        "mode, you may want to return a custom refusal response when no context is found.",
+      title: "Query Mode Refusal Response",
+      "desc-start": "When in query mode, return a custom response if no document context is found.",
+      "desc-end": "",
     },
     temperature: {
-      title: "LLM Temperature",
+      title: "AI Temperature",
       "desc-start":
-        'This setting controls how "creative" your LLM responses will be.',
+        "Controls the creativity of AI responses. Higher values result in more creative outputs, but may reduce coherence.",
       "desc-end":
-        "The higher the number the more creative. For some models this can lead to incoherent responses when set too high.",
-      hint: "Most LLMs have various acceptable ranges of valid values. Consult your LLM provider for that information.",
+        "Consult your AI provider for recommended ranges.",
+      hint: "Refer to your AI provider's guidelines.",
     },
   },
-
-  // Vector Database
   "vector-workspace": {
-    identifier: "Vector database identifier",
+    identifier: "Vector Database Identifier",
     snippets: {
       title: "Max Context Snippets",
       description:
-        "This setting controls the maximum amount of context snippets the will be sent to the LLM for per chat or query.",
+        "Controls the maximum number of context snippets sent to the AI per chat or query.",
       recommend: "Recommended: 4",
     },
     doc: {
-      title: "Document similarity threshold",
+      title: "Document Similarity Threshold",
       description:
-        "The minimum similarity score required for a source to be considered related to the chat. The higher the number, the more similar the source must be to the chat.",
+        "Minimum similarity score required for a source to be considered relevant. Higher scores mean stricter matching.",
       zero: "No restriction",
-      low: "Low (similarity score ≥ .25)",
-      medium: "Medium (similarity score ≥ .50)",
-      high: "High (similarity score ≥ .75)",
+      low: "Low (≥ 0.25)",
+      medium: "Medium (≥ 0.50)",
+      high: "High (≥ 0.75)",
     },
     reset: {
       reset: "Reset Vector Database",
       resetting: "Clearing vectors...",
       confirm:
-        "You are about to reset this workspace's vector database. This will remove all vector embeddings currently embedded.\n\nThe original source files will remain untouched. This action is irreversible.",
-      error: "Workspace vector database could not be reset!",
-      success: "Workspace vector database was reset!",
+        "You are about to reset this workspace's vector database. This will remove all vector embeddings. The original source files remain unchanged. This action is irreversible.",
+      error: "Unable to reset the vector database!",
+      success: "Vector database reset successfully!",
     },
   },
-
-  // Agent Configuration
   agent: {
     "performance-warning":
-      "Performance of LLMs that do not explicitly support tool-calling is highly dependent on the model's capabilities and accuracy. Some abilities may be limited or non-functional.",
+      "Performance of AI providers that do not explicitly support tool-calling may vary. Some capabilities might be limited.",
     provider: {
-      title: "Workspace Agent LLM Provider",
+      title: "Workspace Agent AI Provider",
       description:
-        "The specific LLM provider & model that will be used for this workspace's @agent agent.",
+        "Select the AI provider for this workspace's agent functionality.",
     },
     mode: {
       chat: {
-        title: "Workspace Agent Chat model",
+        title: "Workspace Agent Chat Model",
         description:
-          "The specific chat model that will be used for this workspace's @agent agent.",
+          "The chat model used by this workspace's agent. If left empty, the system's default AI settings will be applied.",
       },
-      title: "Workspace Agent model",
+      title: "Workspace Agent Model",
       description:
-        "The specific LLM model that will be used for this workspace's @agent agent.",
+        "The specific AI model that will be used for this workspace's agent.",
       wait: "-- waiting for models --",
     },
-
     skill: {
-      title: "Default agent skills",
+      title: "Default Agent Skills",
       description:
-        "Improve the natural abilities of the default agent with these pre-built skills. This set up applies to all workspaces.",
+        "Enhance the default agent with pre-built skills that apply across all workspaces.",
       rag: {
-        title: "RAG & long-term memory",
+        title: "RAG & Long-Term Memory",
         description:
-          'Allow the agent to leverage your local documents to answer a query or ask the agent to "remember" pieces of content for long-term memory retrieval.',
+          "Enable the agent to leverage local documents to answer queries or retain long-term memory.",
       },
       view: {
-        title: "View & summarize documents",
+        title: "View & Summarize Documents",
         description:
-          "Allow the agent to list and summarize the content of workspace files currently embedded.",
+          "Allow the agent to list and summarize the content of workspace files.",
       },
       scrape: {
-        title: "Scrape websites",
+        title: "Scrape Websites",
         description:
-          "Allow the agent to visit and scrape the content of websites.",
+          "Allow the agent to retrieve content from websites.",
       },
       generate: {
-        title: "Generate charts",
+        title: "Generate Charts",
         description:
-          "Enable the default agent to generate various types of charts from data provided or given in chat.",
+          "Enable the agent to create various types of charts from provided data.",
       },
       save: {
-        title: "Generate & save files to browser",
+        title: "Generate & Save Files",
         description:
-          "Enable the default agent to generate and write to files that save and can be downloaded in your browser.",
+          "Allow the agent to generate, write, and save files that can be downloaded.",
       },
       web: {
-        title: "Live web search and browsing",
+        title: "Live Web Search & Browsing",
         "desc-start":
-          "Enable your agent to search the web to answer your questions by connecting to a web-search (SERP) provider.",
+          "Enable the agent to perform live web searches to answer queries.",
         "desc-end":
-          "Web search during agent sessions will not work until this is set up.",
+          "This feature requires a configured web search provider.",
       },
     },
   },
-
-  // Workspace Chats
   recorded: {
     title: "Workspace Chats",
     description:
-      "These are all the recorded chats and messages that have been sent by users ordered by their creation date.",
+      "Recorded chats and messages, organized by creation date.",
     export: "Export",
     table: {
-      id: "Id",
+      id: "ID",
       by: "Sent By",
       workspace: "Workspace",
       prompt: "Prompt",
@@ -362,14 +338,12 @@ const TRANSLATIONS = {
       at: "Sent At",
     },
   },
-
-  // Appearance
   appearance: {
     title: "Appearance",
     description: "Customize the appearance settings of your platform.",
     logo: {
       title: "Customize Logo",
-      description: "Upload your custom logo to make your chatbot yours.",
+      description: "Upload your custom logo to personalize your platform.",
       add: "Add a custom logo",
       recommended: "Recommended size: 800 x 200",
       remove: "Remove",
@@ -377,29 +351,28 @@ const TRANSLATIONS = {
     },
     message: {
       title: "Customize Messages",
-      description: "Customize the automatic messages displayed to your users.",
+      description:
+        "Customize the automatic messages displayed to your users.",
       new: "New",
-      system: "system",
-      user: "user",
-      message: "message",
-      assistant: "AnythingLLM Chat Assistant",
+      system: "System",
+      user: "User",
+      message: "Message",
+      assistant: "Mito Chat Assistant",
       "double-click": "Double click to edit...",
       save: "Save Messages",
     },
     icons: {
       title: "Custom Footer Icons",
       description:
-        "Customize the footer icons displayed on the bottom of the sidebar.",
+        "Customize the footer icons displayed on the sidebar.",
       icon: "Icon",
       link: "Link",
     },
   },
-
-  // API Keys
   api: {
     title: "API Keys",
     description:
-      "API keys allow the holder to programmatically access and manage this AnythingLLM instance.",
+      "API keys allow programmatic access and management of your Mito instance.",
     link: "Read the API documentation",
     generate: "Generate New API Key",
     table: {
@@ -408,92 +381,82 @@ const TRANSLATIONS = {
       created: "Created",
     },
   },
-
   llm: {
-    title: "LLM Preference",
+    title: "AI Provider Preference",
     description:
-      "These are the credentials and settings for your preferred LLM chat & embedding provider. Its important these keys are current and correct or else AnythingLLM will not function properly.",
-    provider: "LLM Provider",
+      "Configure your credentials and settings for your preferred AI chat and embedding provider. Ensure these keys are current for optimal functionality.",
+    provider: "AI Provider",
   },
-
   transcription: {
     title: "Transcription Model Preference",
     description:
-      "These are the credentials and settings for your preferred transcription model provider. Its important these keys are current and correct or else media files and audio will not transcribe.",
+      "Set up your preferred transcription model. Ensure the keys are correct to enable accurate media transcription.",
     provider: "Transcription Provider",
     "warn-start":
-      "Using the local whisper model on machines with limited RAM or CPU can stall AnythingLLM when processing media files.",
+      "Using a local transcription model on limited hardware may impact performance.",
     "warn-recommend":
-      "We recommend at least 2GB of RAM and upload files <10Mb.",
+      "We recommend at least 2GB of RAM and files smaller than 10Mb.",
     "warn-end":
-      "The built-in model will automatically download on the first use.",
+      "The built-in model will download on first use.",
   },
-
   embedding: {
     title: "Embedding Preference",
     "desc-start":
-      "When using an LLM that does not natively support an embedding engine - you may need to additionally specify credentials to for embedding text.",
+      "Configure credentials for your embedding engine if your AI provider does not natively support embeddings.",
     "desc-end":
-      "Embedding is the process of turning text into vectors. These credentials are required to turn your files and prompts into a format which AnythingLLM can use to process.",
+      "Embeddings convert text into vectors for AI processing.",
     provider: {
       title: "Embedding Provider",
       description:
-        "There is no set up required when using AnythingLLM's native embedding engine.",
+        "No setup required when using Mito's native embedding engine.",
     },
   },
-
   text: {
-    title: "Text splitting & Chunking Preferences",
+    title: "Text Splitting & Chunking Preferences",
     "desc-start":
-      "Sometimes, you may want to change the default way that new documents are split and chunked before being inserted into your vector database.",
+      "Modify how new documents are split and chunked before insertion into the vector database.",
     "desc-end":
-      "You should only modify this setting if you understand how text splitting works and it's side effects.",
-    "warn-start": "Changes here will only apply to",
-    "warn-center": "newly embedded documents",
-    "warn-end": ", not existing documents.",
+      "Only adjust if you understand text splitting and its effects.",
+    "warn-start": "Changes here apply only to",
+    "warn-center": "new documents",
+    "warn-end": ", not existing ones.",
     size: {
       title: "Text Chunk Size",
       description:
-        "This is the maximum length of characters that can be present in a single vector.",
-      recommend: "Embed model maximum length is",
+        "Maximum number of characters per vector.",
+      recommend: "Embed model max length is",
     },
-
     overlap: {
       title: "Text Chunk Overlap",
       description:
-        "This is the maximum overlap of characters that occurs during chunking between two adjacent text chunks.",
+        "Maximum overlap between adjacent text chunks.",
     },
   },
-
-  // Vector Database
   vector: {
     title: "Vector Database",
     description:
-      "These are the credentials and settings for how your AnythingLLM instance will function. It's important these keys are current and correct.",
+      "Configure how Mito stores and retrieves data. Ensure your keys are correct for optimal performance.",
     provider: {
       title: "Vector Database Provider",
-      description: "There is no configuration needed for LanceDB.",
+      description: "No additional configuration needed for the default provider.",
     },
   },
-
-  // Embeddable Chat Widgets
   embeddable: {
     title: "Embeddable Chat Widgets",
     description:
-      "Embeddable chat widgets are public facing chat interfaces that are tied to a single workspace. These allow you to build workspaces that then you can publish to the world.",
-    create: "Create embed",
+      "Create public-facing chat interfaces linked to a single workspace for external engagement.",
+    create: "Create Embed",
     table: {
       workspace: "Workspace",
       chats: "Sent Chats",
       Active: "Active Domains",
     },
   },
-
   "embed-chats": {
     title: "Embed Chats",
     export: "Export",
     description:
-      "These are all the recorded chats and messages from any embed that you have published.",
+      "Recorded chats and messages from published embeds.",
     table: {
       embed: "Embed",
       sender: "Sender",
@@ -502,37 +465,34 @@ const TRANSLATIONS = {
       at: "Sent At",
     },
   },
-
   multi: {
     title: "Multi-User Mode",
     description:
-      "Set up your instance to support your team by activating Multi-User Mode.",
+      "Set up your instance to support team collaboration by activating Multi-User Mode.",
     enable: {
       "is-enable": "Multi-User Mode is Enabled",
       enable: "Enable Multi-User Mode",
       description:
-        "By default, you will be the only admin. As an admin you will need to create accounts for all new users or admins. Do not lose your password as only an Admin user can reset passwords.",
+        "By default, you are the only admin. Create accounts for additional users or admins. Keep your password safe; only admins can reset passwords.",
       username: "Admin account username",
       password: "Admin account password",
     },
     password: {
       title: "Password Protection",
       description:
-        "Protect your AnythingLLM instance with a password. If you forget this there is no recovery method so ensure you save this password.",
+        "Secure your Mito instance with a password. If lost, there is no recovery method.",
     },
     instance: {
       title: "Password Protect Instance",
       description:
-        "By default, you will be the only admin. As an admin you will need to create accounts for all new users or admins. Do not lose your password as only an Admin user can reset passwords.",
+        "Set a password for your instance. Only admins can reset passwords.",
       password: "Instance password",
     },
   },
-
-  // Event Logs
   event: {
     title: "Event Logs",
     description:
-      "View all actions and events happening on this instance for monitoring.",
+      "View all actions and events on your instance for monitoring purposes.",
     clear: "Clear Event Logs",
     table: {
       type: "Event Type",
@@ -540,13 +500,11 @@ const TRANSLATIONS = {
       occurred: "Occurred At",
     },
   },
-
-  // Privacy & Data-Handling
   privacy: {
     title: "Privacy & Data-Handling",
     description:
-      "This is your configuration for how connected third party providers and AnythingLLM handle your data.",
-    llm: "LLM Selection",
+      "Configure how connected third-party providers and Mito handle your data.",
+    ai: "AI Selection",
     embedding: "Embedding Preference",
     vector: "Vector Database",
     anonymous: "Anonymous Telemetry Enabled",

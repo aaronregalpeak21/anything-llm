@@ -205,7 +205,7 @@ function TelemetryLogs({ settings }) {
             telemetry all we ask is to consider sending us feedback and thoughts
             so that we can continue to improve AnythingLLM for you.{" "}
             <a
-              href="mailto:team@mintplexlabs.com"
+              href="mailto:support@mitolabs.ai"
               className="underline text-blue-400"
               target="_blank"
             >

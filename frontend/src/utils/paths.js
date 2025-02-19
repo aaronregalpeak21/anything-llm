@@ -34,16 +34,16 @@ export default {
     },
   },
   github: () => {
-    return "https://github.com/Mintplex-Labs/anything-llm";
+    return "https://github.com/aaronregalpeak21/anything-llm";
   },
   discord: () => {
-    return "https://discord.com/invite/6UyHPeGZAC";
+    return "https://discord.com/channels/1229597156394930188/1229597156420227078";
   },
   docs: () => {
     return "https://docs.anythingllm.com";
   },
   mailToMintplex: () => {
-    return "mailto:team@mintplexlabs.com";
+    return "mailto:support@mitolabs.ai";
   },
   hosting: () => {
     return "https://my.mintplexlabs.com/aio-checkout?product=anythingllm";

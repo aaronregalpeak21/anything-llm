@@ -5,7 +5,7 @@ import System from "@/models/system";
 import showToast from "@/utils/toast";
 import PreLoader from "@/components/Preloader";
 import OpenAiLogo from "@/media/llmprovider/openai.png";
-import AnythingLLMIcon from "@/media/logo/anything-llm-icon.png";
+import MitoIcon from "@/media/logo/mito-icon.png";
 import OpenAiWhisperOptions from "@/components/TranscriptionSelection/OpenAiOptions";
 import NativeTranscriptionOptions from "@/components/TranscriptionSelection/NativeTranscriptionOptions";
 import LLMItem from "@/components/LLMSelection/LLMItem";
@@ -24,7 +24,7 @@ const PROVIDERS = [
   {
     name: "AnythingLLM Built-In",
     value: "local",
-    logo: AnythingLLMIcon,
+    logo: MitoIcon,
     options: (settings) => <NativeTranscriptionOptions settings={settings} />,
     description: "Run a built-in whisper model on this instance privately.",
   },

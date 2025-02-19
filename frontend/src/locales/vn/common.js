@@ -114,7 +114,7 @@ const TRANSLATIONS = {
   },
   welcomeMessage: {
     part1:
-      "Chào mừng đến với AnythingLLM, AnythingLLM is an open-source AI tool by Mintplex Labs that turns anything into a trained chatbot you can query and chat with. AnythingLLM is a BYOK (bring-your-own-keys) software so there is no subscription, fee, or charges for this software outside of the services you want to use with it.",
+      "Chào mừng đến với Mito Labs, MitoLabs is an open-source AI tool by Mintplex Labs that turns anything into a trained chatbot you can query and chat with. AnythingLLM is a BYOK (bring-your-own-keys) software so there is no subscription, fee, or charges for this software outside of the services you want to use with it.",
     part2:
       "AnythingLLM is the easiest way to put powerful AI products like OpenAi, GPT-4, LangChain, PineconeDB, ChromaDB, and other services together in a neat package with no fuss to increase your productivity by 100x.",
     part3:
@@ -130,7 +130,6 @@ const TRANSLATIONS = {
       "AnythingLLM is more than a smarter Dropbox.\n\nAnythingLLM offers two ways of talking with your data:\n\n<i>Query:</i> Your chats will return data or inferences found with the documents in your workspace it has access to. Adding more documents to the Workspace make it smarter! \n\n<i>Conversational:</i> Your documents + your on-going chat history both contribute to the LLM knowledge at the same time. Great for appending real-time text-based info or corrections and misunderstandings the LLM might have. \n\nYou can toggle between either mode \n<i>in the middle of chatting!</i>",
     user3: "Wow, this sounds amazing, let me try it out already!",
     part6: "Have Fun!",
-    starOnGitHub: "Star on GitHub",
     contact: "Contact Mintplex Labs",
   },
   "new-workspace": {
@@ -366,7 +365,7 @@ const TRANSLATIONS = {
   api: {
     title: "Khóa API",
     description:
-      "API keys allow the holder to programmatically access and manage this AnythingLLM instance.",
+      "API keys allow the holder to programmatically access and manage this Mito Instance.",
     link: "Read the API documentation",
     generate: "Generate New API Key",
     table: {
@@ -429,7 +428,7 @@ const TRANSLATIONS = {
   vector: {
     title: "Cơ sở dữ liệu Vector",
     description:
-      "These are the credentials and settings for how your AnythingLLM instance will function. It's important these keys are current and correct.",
+      "These are the credentials and settings for how your Mito Instance will function. It's important these keys are current and correct.",
     provider: {
       title: "Cơ sở dữ liệu Vector Provider",
       description: "There is no configuration needed for LanceDB.",
@@ -474,7 +473,7 @@ const TRANSLATIONS = {
     password: {
       title: "Mật khẩu Protection",
       description:
-        "Protect your AnythingLLM instance with a password. If you forget this there is no recovery method so ensure you save this password.",
+        "Protect your Mito Instance with a password. If you forget this there is no recovery method so ensure you save this password.",
     },
     instance: {
       title: "Mật khẩu Protect Instance",

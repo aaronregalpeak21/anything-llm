@@ -1,10 +1,10 @@
 {
-  "name": "anything-llm",
+  "name": "mito-chat",
   "version": "0.2.0",
-  "description": "The best solution for turning private documents into a chat bot using off-the-shelf tools and commercially viable AI technologies.",
+  "description": "Mito Chat - Your AI-powered business performance engine. An all-in-one solution for analyzing business data and getting intelligent insights using state-of-the-art AI technologies.",
   "main": "index.js",
   "type": "module",
-  "author": "Timothy Carambat (Mintplex Labs)",
+  "author": "Mito",
   "license": "MIT",
   "engines": {
     "node": ">=18"
